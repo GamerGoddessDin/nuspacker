@@ -11,7 +11,7 @@ To use this, you'll a folder which contains a "code", "content" and "meta" folde
   
 *Optional:*  
 To save you some typing you can also create a text file "encryptKeyWith" which contains the common key as hexstring (32 characters). This will be used to encrypt the encryption key.   
-#### Pack files ####
+#### Pack Files ####
 To pack files, you can use these arguments:
 ```
 -in             ; is the dir where you have your decrypted data. Make this pointing to the root folder with the folder code,content and meta.
@@ -37,3 +37,13 @@ Without common key stored in file.
 ```
 java -jar NUSPacker.jar -in "inputDir" -out "outputDir" -encryptKeyWith 12345678123456781234567812345678
 ```
+
+#### Quick Launchers ####
+For easier use after setting up your common key you can just run the relevant script for your system to pack the contents of "in" and output it in "out".
+On Linux you may have to open the folder in your terminal of choice and run
+```
+./NUS.sh
+```
+rather than just double clicking it or using "run in konsole".
+
+Windows users, I didn't test the .bat file version but it should work.
